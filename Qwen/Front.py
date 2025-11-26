@@ -31,7 +31,7 @@ class ChatLLM(LLM):
 
     @classmethod
     def _post(self, url: str, query: Dict) -> Any:
-        key = "9d207bf0-10f5-4d8f-a479-22ff5aeff8d2"
+        key = ""
         headers = {
             'Authorization': f'Bearer {key}',
             'Content-Type': 'application/json'

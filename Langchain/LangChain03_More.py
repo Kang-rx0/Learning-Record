@@ -24,7 +24,7 @@ model = init_chat_model(
     model="Qwen/Qwen3-8B",
     model_provider="openai",
     base_url="https://api.siliconflow.cn/v1/",
-    api_key="sk-vjklrvkomqgjluwtfxssjnmetzvtwgfqgdgcyiycymhpjpzd",
+    api_key="",
 )
 parser = StrOutputParser()
 
