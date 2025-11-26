@@ -1,0 +1,21 @@
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+    <!-- 下面是用硬编码来写要跳转的url，但是当我想更改url时，我需要改url.py和这里的-->
+        <!-- <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li> -->
+
+
+    <!-- 另外一种方式是让程序自己找
+     使用 {% url %} 模板标签
+     因为 在url.py里有定义了url文件的名字（pools）和
+     每个url的名字name，因此只需要在模版标签里传入对应的url文件名字以及链接名字就好
+     文件名:链接名。
+        例如这里polls/urls.py里定义了url文件（app_name = 'polls'），
+        以及detail视图函数对应的链接名字name='detail'，因此这里传入 'polls:detail' 就可以了
+     -->
+     <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
