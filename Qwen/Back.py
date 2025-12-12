@@ -39,7 +39,7 @@ def chat(data: dict = Body(...)):
         add_generation_prompt=True,
         enable_thinking=True # 切换是否为思考模式
         )
-    model_inputs = tokenizer([text], return_tensors="pt").to(model.device) 
+    model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
     generated = model.generate(
         **model_inputs,
         max_length=32768,

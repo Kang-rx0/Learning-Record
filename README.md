@@ -6,8 +6,17 @@
       - Qwne, DeepSeek
       - Llama Factory；Unsloth
       - LoRA， QLoRA 
+
+- **Agent**：
+    - LangGraph
+    - ReAct
+    - OpenManus （https://blog.csdn.net/qq_35082030/article/details/146371952）
+
 - **前端**：
-    - Vue3 + Vite + TypeScript
+    - Vue3 + TypeScript
+
 - **后端**：
     - FastAPI
     - Django（学习中）
+
+- **强化学习**
