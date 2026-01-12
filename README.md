@@ -9,7 +9,6 @@
 
 - **Agent**：
     - LangGraph
-    - ReAct
     - Deer Flow （https://github.com/bytedance/deer-flow）
 
 - **前端**：
@@ -25,7 +24,6 @@
 ```
 .
 ├── Agent/                  # 智能体相关学习
-│   ├── 01初始智能体.ipynb   # 初始智能体实现
 │   ├── note.md             # 笔记
 │   └── src/                # 源码
 │       ├── agents/         # 智能体实现
@@ -38,6 +36,7 @@
 │
 ├── Django/                 # Django官方文档学习笔记
 │   ├── part1/ 到 part8/    # 各章节学习内容
+│
 ├── fastapi/                # FastAPI学习代码
 │   ├── 表单和文件.ipynb     # 表单和文件处理
 │   ├── 请求体参数.ipynb     # 请求体参数学习
@@ -65,7 +64,8 @@
 │   └── Web.py              # 网页相关
 │
 ├── RL/                     # 强化学习
-│   └── chapter1/           # 第一章学习内容
+│   ├── DQN.ipynb         
+│   ├── Double DQN.ipynb         
 │
 ├── Vue/                    # Vue3 + TypeScript学习
 │   ├── src/                # 各个功能的学习笔记
